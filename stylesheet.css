@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed");
+* {
+  text-align: center;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+body {
+  background: #2f3136;
+  color: white;
+}
+
+#container {
+  margin-top: 80px;
+  margin: auto;
+  margin-right: 25px;
+  margin-left: 25px;
+  box-shadow: 7px 7px #0000006c;
+  background: #36393f;
+  padding: 25px;
+  border-radius: 100px;
+}
+
+#header {
+  text-align: center;
+  margin-top: 47px;
+  margin: auto;
+  font-size: 39px;
+}
+
+#footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.37);
+  color: white;
+  text-align: center;
+}
+
+.center-align {
+  text-align: center;
+}
+
+p {
+  font-size: 27px;
+}
+
+a,
+a:visited {
+  color: rgb(129, 129, 129);
+}
+
+#avatar,
+#cock,
+#username,
+#content {
+  font-size: 25px;
+  background-color: #40444b;
+  width: 75%;
+  padding: 20px;
+  border: 2px solid #000000c9;
+  border-radius: 25px;
+  color: white;
+}
+
+#btn {
+    width: 35%;
+    font-size: 25px;
+  margin-top: 25px;
+  padding: 17px;
+  
+    border: none;
+    outline: none;
+    color: rgb(255, 255, 255);
+    background: #5865f2
+;
+    cursor: pointer;
+    position: relative;
+    transform: rotate(0deg);
+    transition: transform 0.2s ease-in-out;
+    z-index: 0;
+    border-radius: 25px;
+}
+
+#btn:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+#btn:hover {
+    transform: rotate(2deg);
+}
+
+#btn:active {
+    color: #000
+}
+
+#btn:active:after {
+    background: transparent;
+}
+
+#btn:hover:before {
+    opacity: 1;
+}
+
+#btn:after {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+#log {
+  text-align: center;
+  width: 5%;
+  background-color: rgb(110, 255, 43);
+  color: green;
+}
+
+.rainbow {
+  
+   /* Font options */
+  text-shadow: 2px 2px 4px #000000;
+  
+   /* Chrome, Safari, Opera */
+  -webkit-animation: rainbow 5s infinite; 
+  
+  /* Internet Explorer */
+  -ms-animation: rainbow 5s infinite;
+  
+  /* Standar Syntax */
+  animation: rainbow 5s infinite; 
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes rainbow{
+  0%{color: orange;}	
+  10%{color: purple;}	
+	20%{color: red;}
+  30%{color: CadetBlue;}
+	40%{color: yellow;}
+  50%{color: coral;}
+	60%{color: green;}
+  70%{color: cyan;}
+  80%{color: DeepPink;}
+  90%{color: DodgerBlue;}
+	100%{color: orange;}
+}
+
+/* Internet Explorer */
+@-ms-keyframes rainbow{
+   0%{color: orange;}	
+  10%{color: purple;}	
+	20%{color: red;}
+  30%{color: CadetBlue;}
+	40%{color: yellow;}
+  50%{color: coral;}
+	60%{color: green;}
+  70%{color: cyan;}
+  80%{color: DeepPink;}
+  90%{color: DodgerBlue;}
+	100%{color: orange;}
+}
+
+/* Standar Syntax */
+@keyframes rainbow{
+    0%{color: orange;}	
+  10%{color: purple;}	
+	20%{color: red;}
+  30%{color: CadetBlue;}
+	40%{color: yellow;}
+  50%{color: coral;}
+	60%{color: green;}
+  70%{color: cyan;}
+  80%{color: DeepPink;}
+  90%{color: DodgerBlue;}
+	100%{color: orange;}
+}
